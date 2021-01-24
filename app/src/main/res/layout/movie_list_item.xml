@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp"
+    >
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#AAA"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/movie_img"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:alpha="0.88"
+            android:scaleType="centerCrop"
+            android:src="@drawable/testimage" />
+
+        <TextView
+            android:id="@+id/movie_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#EEFFFFFF"
+            android:padding="13dp"
+            android:text="Bəşəriyyət məhv olma həddindədir. Bu dəfə insanlar Altronun hədəsi altındadır..."
+            android:textColor="#686868"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/movie_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffe81f29"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="parkcinema"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="normal"
+
+            />
+
+        <TextView
+            android:id="@+id/movie_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/movie_tag"
+            android:background="#ffe8ac00"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="28cinema"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="normal"
+
+            />
+
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/movie_desc"
+            android:background="#88000000"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="The Avengers - Age of Ultron"
+            android:textColor="#ffdddddd"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/movie_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/movie_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:background="#cc18477d"
+            android:paddingBottom="5dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="5dp"
+            android:text="IMAX"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

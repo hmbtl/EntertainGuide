@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#11212E"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/movie_detail_img"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shadow_rect"
+        android:scaleType="fitXY"
+        android:src="@drawable/testimage" />
+
+    <TextView
+        android:id="@+id/movie_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/movie_detail_img"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="AVENGERS : AGE OF ULTRON"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/movie_detail_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/movie_detail_title"
+        android:layout_toRightOf="@+id/movie_detail_img"
+        android:paddingLeft="15dp"
+        android:text="Director: Colin Trevorrow"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/movie_detail_writers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:paddingTop="1dp"
+        android:layout_below="@+id/movie_detail_director"
+        android:layout_toRightOf="@+id/movie_detail_img"
+        android:paddingLeft="15dp"
+        android:text="Writers: Rick Jaffa (screenplay), Amanda Silver (screenplay), 5 more credits"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/movie_detail_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:paddingTop="1dp"
+        android:layout_below="@+id/movie_detail_writers"
+        android:layout_toRightOf="@+id/movie_detail_img"
+        android:paddingLeft="15dp"
+        android:text="Stars: Chris Pratt, Bryce Dallas Howard, Ty Simpkins"
+        android:layout_above="@+id/movie_detail_desc"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_desc"
+        android:layout_below="@+id/movie_detail_img"
+        android:text="Twenty-two years after the events of Jurassic Park (1993), Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond. After 10 years of operation and visitor rates declining, in order to fulfill a corporate mandate, a new attraction is created to re-spark visitor's interest, which backfires horribly."
+        android:paddingTop="5dp"
+        android:textColor="#fff"
+
+        />
+</RelativeLayout>

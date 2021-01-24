@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/movie_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="10:26"
+        android:textColor="#ffff8000"
+        android:textSize="35sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/movie_price"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/movie_price_azn"
+        android:gravity="center"
+        android:text="4.00"
+        android:textColor="#de1623"
+        android:textSize="35sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/movie_price_azn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="2dp"
+        android:text="AZN"
+        android:textColor="#de1623"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="IMAX"
+        android:layout_toRightOf="@+id/movie_time"
+        android:layout_toLeftOf="@+id/movie_price"
+        android:textColor="#686868"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

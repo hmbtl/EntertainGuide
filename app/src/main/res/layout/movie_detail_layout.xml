@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/movie_toolbar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/movie_toolbar"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:divider="#aaa"
+        android:dividerHeight="1dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_below="@+id/movie_toolbar"
+        android:src="@drawable/shadow_bottom" />
+
+
+</RelativeLayout>

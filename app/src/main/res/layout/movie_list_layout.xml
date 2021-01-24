@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd1d1d1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/toolbar_bg"
+        android:scaleType="centerCrop"
+        />
+
+    <include
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/movie_toolbar"
+        android:layout_width="match_parent"
+        layout="@layout/tool_bar"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/movie_grid_view"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/movie_toolbar"
+        android:horizontalSpacing="5dp"
+        android:layout_alignParentBottom="true"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+</RelativeLayout>
